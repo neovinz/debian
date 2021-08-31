@@ -1,0 +1,7 @@
+*
+!.gitignore
+!/bin
+!/bin/*
+
+!/terminal
+!/terminal/*
