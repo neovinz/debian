@@ -27,6 +27,10 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+
 echo "DONE"
 
 
