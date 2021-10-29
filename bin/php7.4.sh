@@ -13,4 +13,4 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /et
 
 
 # install
-sudo apt update && sudo apt -y install php7.4 php7.4-mysql php7.4-mbstring  php7.4-xml php7.4-sqlite3
+sudo apt update && sudo apt -y install php7.4 php7.4-mysql php7.4-mbstring  php7.4-xml php7.4-sqlite3 php7.4-curl
