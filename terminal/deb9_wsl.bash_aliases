@@ -1,3 +1,7 @@
+# docker 
+alias dcu='docker-compose up -d'
+alias dcd='docker-compose down'
+alias dex='_dex(){ docker exec -it "$1" /bin/bash;}; _dex'
 alias myip="/sbin/ifconfig | grep -Eo 'inet (adr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'"
 alias h='history'
 # alias cat='cat -n'
