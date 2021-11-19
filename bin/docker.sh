@@ -23,17 +23,14 @@ docker version
 
 
 # instal docker-compose 
-sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
 sudo groupadd docker
 sudo usermod -aG docker $USER
-
+# newgrp docker
 
 echo "DONE"
 
 
-# display how to remove it 
-echo "to uninstall run \n sudo apt-get purge docker-ce docker-ce-cli containerd.io"
-echo "to remove all images volumes and containers run : \n sudo rm -rf /var/lib/docker &&  sudo rm -rf /var/lib/containerd"

@@ -1,18 +1,23 @@
+# console
+alias h='history'
+alias hg='history | grep '
+alias lsb='lsb_release -a'
 # docker 
 alias dcu='docker-compose up -d'
 alias dcb='docker-compose build'
 alias dcd='docker-compose down'
 alias dex='_dex(){ docker exec -it "$1" /bin/bash;}; _dex'
-alias myip="/sbin/ifconfig | grep -Eo 'inet (adr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'"
-alias h='history'
-# alias cat='cat -n'
-alias hl='sh /home/$USER/bin/usefull-commands.sh'
-alias hg='history | grep '
+alias ptr='docker start portainer'
+# git
+alias gs='git status'
+alias ghr='git reset --hard HEAD'
+# php
+alias phpe='cat ~/bin/php-all-errors.php'
 alias phpv='sudo update-alternatives --config php'
 alias phps='php -S localhost:8888'
-alias phpe='cat ~/bin/php-all-errors.php'
-alias lsb='lsb_release -a'
+# others
+alias myip="/sbin/ifconfig | grep -Eo 'inet (adr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'"
+alias hl='sh ~/bin/usefull-commands.sh'
 alias ws='sudo du -h --max-depth=1 ./ | sudo sort -hr'
-alias ptr='docker start portainer'
 alias num='stat --format '%a' '
 alias vncup='sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target'
