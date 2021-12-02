@@ -1,6 +1,6 @@
 # console
 alias h='history'
-alias hg='history | grep '
+alias hg='history | grep --color'
 alias lsb='lsb_release -a'
 # docker 
 alias dcu='docker-compose up -d'
@@ -16,10 +16,10 @@ alias phpe='cat ~/bin/php-all-errors.php'
 alias phpv='sudo update-alternatives --config php'
 alias phps='php -S localhost:8888'
 # others
-alias myip="/sbin/ifconfig | grep -Eo 'inet (adr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'"
+alias myip="/sbin/ifconfig | grep --color -Eo 'inet (adr:)?([0-9]*\.){3}[0-9]*' | grep --color -Eo '([0-9]*\.){3}[0-9]*'"
 alias hl='sh ~/bin/usefull-commands.sh'
 alias ws='sudo du -h --max-depth=1 ./ | sudo sort -hr'
 alias num='stat --format '%a' '
 alias vncup='sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target'
 alias wget-ncc='wget --no-check-certificate'
-alias getv='sudo apt list --installed | grep'
+alias getv='sudo apt list --installed | grep --color'
