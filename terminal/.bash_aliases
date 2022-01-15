@@ -11,6 +11,8 @@ alias ptr='docker start portainer'
 # git
 alias gs='git status'
 alias ghr='git reset --hard HEAD'
+#gnome
+alias gss='gsettings set org.gnome.desktop.interface clock-show-seconds true'
 # php
 alias phpe='cat ~/bin/php-all-errors.php'
 alias phpv='sudo update-alternatives --config php'
