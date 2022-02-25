@@ -12,12 +12,14 @@ alias ptr='docker start portainer'
 alias gs='git status'
 alias ghr='git reset --hard HEAD'
 alias glo='git log --oneline --graph'
-#gnome
+# gnome
 alias gss='gsettings set org.gnome.desktop.interface clock-show-seconds true'
 # php
 alias phpe='cat ~/bin/php-all-errors.php'
 alias phpv='sudo update-alternatives --config php'
 alias phps='php -S localhost:8888'
+# samba
+alias sul='sudo pdbedit -L -v'
 # others
 alias myip="/sbin/ifconfig | grep --color -Eo 'inet (adr:)?([0-9]*\.){3}[0-9]*' | grep --color -Eo '([0-9]*\.){3}[0-9]*'"
 alias hl='sh ~/bin/usefull-commands.sh'
