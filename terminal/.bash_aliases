@@ -2,6 +2,7 @@
 alias h='history'
 alias hg='history | grep --color'
 alias lsb='lsb_release -a'
+alias tw='sudo chown -Rv www-data:www-data /var/www | grep --color -e changed -e modif'
 # docker 
 alias dcu='docker-compose up -d'
 alias dcb='docker-compose build'
