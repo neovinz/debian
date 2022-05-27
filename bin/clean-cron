@@ -21,5 +21,6 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 
 0 * * * * /bin/echo '' > /var/log/xrdp.log
-0 13 * * * rm -f /var/log/*.gz
+0 * * * * rm -f /var/log/*.gz
+0 * * * * rm -f /var/log/apache2/*.gz
 # End
