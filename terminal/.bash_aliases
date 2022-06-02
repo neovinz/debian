@@ -8,6 +8,8 @@ alias dcu='docker-compose up -d'
 alias dcb='docker-compose build'
 alias dcd='docker-compose down'
 alias dex='_dex(){ docker exec -it "$1" /bin/bash;}; _dex'
+alias dps='docker ps'
+alias dpsa='docker ps -a'
 alias ptr='docker start portainer'
 # git
 alias gs='git status'
