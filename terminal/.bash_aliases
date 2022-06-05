@@ -1,6 +1,12 @@
 # console
+alias cp='cp -v'
+alias mv='mv -v'
 alias h='history'
 alias hg='history | grep --color'
+alias ll='ls -lAh'
+alias la='ls -A'
+alias l='ls -CF'
+
 alias lsb='lsb_release -a'
 alias tw='sudo chown -Rv www-data:www-data /var/www | grep --color -e changed -e modif'
 # docker 
