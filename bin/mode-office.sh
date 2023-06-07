@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in apache2 xrdp docker
+for i in apache2 xrdp mysql
 do
     echo 'Stop service '$i
     sudo service $i stop
