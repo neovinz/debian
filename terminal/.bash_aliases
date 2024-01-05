@@ -12,7 +12,7 @@ alias tw='sudo chown -Rv www-data:www-data /var/www | grep --color -e changed -e
 # docker 
 alias dcu='docker-compose up -d'
 alias dcb='BUILDKIT_COLORS="run=light-green:error=light-red:cancel=light-cyan:warning=light-red" docker-compose build'
-alias dcd='docker-compose down'
+alias dcd='docker compose down'
 alias dex='_dex(){ docker exec -it "$1" /bin/bash;}; _dex'
 alias dps='docker ps'
 alias dpsa='docker ps -a'
