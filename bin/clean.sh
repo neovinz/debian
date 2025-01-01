@@ -2,6 +2,7 @@
 
 
 sudo apt-get purge
+sudo snap set system refresh.retain=2
 snap list --all | awk '/disabled/{print $1, $3}' |
  while read snapname revision; do
      sudo snap remove "$snapname" --revision="$revision"
