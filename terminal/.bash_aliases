@@ -9,6 +9,7 @@ alias l='ls -CF'
 
 alias lsb='lsb_release -a'
 alias tw='sudo chown -Rv www-data:www-data /var/www | grep --color -e changed -e modif'
+alias tm='sudo chown -Rv $USER:$USER '
 # docker 
 alias dcu='docker-compose up -d'
 alias dcb='BUILDKIT_COLORS="run=light-green:error=light-red:cancel=light-cyan:warning=light-red" docker-compose build'
@@ -31,6 +32,7 @@ alias sub='subl .;smerge .'
 # samba
 alias sul='sudo pdbedit -L -v'
 # others
+alias asp='sudo service apache2 stop'
 alias myip="/sbin/ifconfig | grep --color -Eo 'inet (adr:)?([0-9]*\.){3}[0-9]*' | grep --color -Eo '([0-9]*\.){3}[0-9]*'"
 alias allip="nmap -sP 192.168.1.*"
 alias hl='sh ~/bin/usefull-commands.sh'

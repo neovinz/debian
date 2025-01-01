@@ -2,10 +2,6 @@
 
 sudo apt update
 
-#!/bin/bash
-
-sudo apt update
-
 # remove programs
 sudo apt remove rhythmbox  thunderbird lightsoff polari
 sudo apt remove evolution
@@ -30,3 +26,4 @@ sudo apt install hddtemp lm-sensors
 sudo apt install task-print-server
 sudo apt install cups
 sudo apt install lsb
+sudo apt remove goldendict kasumi xterm yelp
