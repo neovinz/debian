@@ -2,7 +2,13 @@
 
 
 sudo apt-get purge
-sudo apt-get autoremove
+snap list --all | awk '/disabled/{print $1, $3}' |
+ while read snapname revision; do
+     sudo snap remove "$snapname" --revision="$revision"
+ done
+
+
+sudo apt autoclean
 sudo apt autoremove
 sudo apt clean
 
@@ -16,9 +22,7 @@ sudo rm -fv /var/log/*.gz
 echo "Remove files in /var/log/apache2/*.gz"
 sudo rm -fv /var/log/apache2/*.gz
 
-
-
-
 echo "Remove Opera and firefox file cache"
 rm -rfv .cache/opera/Cache/**
 rm -rfv .cache/mozilla/firefox/f7pndyed.default-esr/cache2/**
+
