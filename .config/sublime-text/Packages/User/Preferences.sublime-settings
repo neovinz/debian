@@ -1,4 +1,5 @@
 {
 	"font_size": 14,
-	"trim_trailing_white_space_on_save": "all"
+	"trim_trailing_white_space_on_save": "all",
+	"highlight_line": true
 }
